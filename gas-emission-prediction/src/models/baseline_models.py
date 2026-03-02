@@ -4,6 +4,7 @@ from typing import Dict, Tuple
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+import keras
 from keras.models import Sequential
 from keras.layers import LSTM, Dense
 from sklearn.linear_model import LinearRegression
