@@ -1,23 +1,17 @@
-
-
 import logging
 from typing import Dict, Tuple
 
 import numpy as np
 import pandas as pd
-
+import tensorflow as tf
+from keras.models import Sequential
+from keras.layers import LSTM, Dense
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense
-
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
-
-# METRIC CALCULATION
 
 
 def calculate_metrics(
