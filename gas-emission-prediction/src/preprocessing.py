@@ -18,7 +18,7 @@ class EmissionPreprocessor:
         return df.drop_duplicates()
 
     def handle_missing(self, df: pd.DataFrame) -> pd.DataFrame:
-        df = df.sort_values("timestamp")
+        df = df.sort_values("Date")
         df = df.fillna(method="ffill", limit=6)
         df = df.interpolate(method="linear")
         return df

@@ -7,7 +7,7 @@ import keras
 
 
 def create_time_features(df: pd.DataFrame) -> pd.DataFrame:
-    df["timestamp"] = pd.to_datetime(df["timestamp"])
+    df["Date"] = pd.to_datetime(df["Date"])
 
     df["hour"] = df["timestamp"].dt.hour
     df["day_of_week"] = df["timestamp"].dt.dayofweek
