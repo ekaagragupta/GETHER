@@ -1,7 +1,7 @@
 import pandas as pd
 
-from src.preprocessing import EmissionPreprocessor
-from src.feature_engineering import (
+from preprocessing import EmissionPreprocessor
+from feature_engineering import (
     create_time_features,
     create_lag_features
 )
