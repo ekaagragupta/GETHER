@@ -43,3 +43,13 @@ def create_sequences(
         y.append(data[i + sequence_length, 0])
 
     return np.array(X), np.array(y)
+
+def create_rolling_features(df: pd.DataFrame) -> pd.DataFrame:
+
+    windows = [3, 7, 14]
+
+    for w in windows:
+        df[f"AQI_roll_mean_{w}"] = df["AQI"].rolling(window=w).mean()
+        df[f"AQI_roll_std_{w}"] = df["AQI"].rolling(window=w).std()
+
+    return df
