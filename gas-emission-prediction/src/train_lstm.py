@@ -73,3 +73,6 @@ test_loss, test_mae = model.evaluate(X_test, y_test)
 
 print("\nTest Loss:", test_loss)
 print("Test MAE:", test_mae)
+
+model.save("models/aqi_lstm_model.h5")
+print("Model saved.")
