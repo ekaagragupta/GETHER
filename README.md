@@ -26,7 +26,7 @@ The platform integrates **data infrastructure, machine learning, explainability,
 
 # Core Capabilities
 
-**Temporal AQI Prediction**
+**1. Temporal AQI Prediction**
 
 Predict AQI using a hybrid system combining:
 
@@ -36,7 +36,7 @@ Predict AQI using a hybrid system combining:
 
 ---
 
-**Causal Discovery**
+**2. Causal Discovery**
 
 Identify **true causal relationships** between pollutants and AQI using:
 
@@ -46,7 +46,7 @@ Identify **true causal relationships** between pollutants and AQI using:
 
 ---
 
-**Counterfactual Simulation**
+**3. Counterfactual Simulation**
 
 Simulate environmental policies such as:
 
@@ -60,7 +60,7 @@ Example:
 
 ---
 
-**Explainable AI**
+**4. Explainable AI**
 
 Model explanations generated using:
 
@@ -70,7 +70,7 @@ Model explanations generated using:
 
 ---
 
-**Self-Evaluation**
+**5. Self-Evaluation**
 
 The system evaluates its own predictions using:
 
@@ -80,7 +80,7 @@ The system evaluates its own predictions using:
 
 ---
 
-**Interactive Dashboard**
+**6. Interactive Dashboard**
 
 A Streamlit dashboard enables:
 
@@ -389,17 +389,12 @@ Planned improvements include:
 * real-time satellite data ingestion
 * multi-city causal networks
 
----
-
-# License
-
-MIT License
 
 ---
 
 # Author
 
-Ekaagra Gupta
+Ekaagra Gupta -
 B.Tech AI & ML
 
 ---
