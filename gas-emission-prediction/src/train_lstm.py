@@ -4,8 +4,8 @@ from sklearn.model_selection import train_test_split
 
 from keras.callbacks import EarlyStopping
 
-from src.models.advanced_lstm import build_advanced_lstm
-from src.feature_engineering import create_sequences
+from models.advanced_lstm import build_advanced_lstm
+from feature_engineering import create_sequences
 
 
 # load processed dataset
