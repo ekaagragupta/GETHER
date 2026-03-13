@@ -8,16 +8,14 @@ from keras.models import load_model
 from feature_engineering import create_sequences
 
 
-# Load processed dataset
 df = pd.read_csv("../data/processed/emissions_clean.csv")
 
-# Target column
 target_column = "AQI"
 
 X = df.drop(columns=[target_column]).values
 y = df[target_column].values
 
-# Convert to sequences
+
 sequence_length = 30
 data = np.column_stack((y, X))
 

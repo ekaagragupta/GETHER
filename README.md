@@ -380,7 +380,7 @@ python src/visualize_predictions.py
 
 ---
 
-# Future Extensions
+# Future Extension
 
 Planned improvements include:
 
